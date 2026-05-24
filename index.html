@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EquiBalance is a responsive forage-first equine nutrition prototype website with horse profile, forage entry, nutrition dashboard, AI explanation, and user guide sections." />
+  <title>EquiBalance | Forage-First Equine Nutrition</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="EquiBalance home">
+         <img src="images/equibalance-logo.png" alt="Equibalance logo" class="logo">
+        <span>EquiBalance</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="user-guide.html">User Guide</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="page-section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Forage-first nutrition support</p>
+          <h1>Feed Your Horse Forage-First</h1>
+          <p class="lead">EquiBalance is a web application that helps horse owners make nutrition decisions with a forage-first approach, treating hay and pasture as the primary sources of calories rather than commercial feeds. </p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="prototype.html">View Prototype</a>
+            <a class="btn btn-secondary" href="about.html">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-card image-card" aria-label="Decorative horse nutrition dashboard preview">
+          <img src="images/equibalance-logo.png" alt="Equibalance logo" class="logo-icon" aria-hidden="true">
+          <div class="mini-dashboard">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container feature-grid" aria-label="Core EquiBalance features">
+        <article class="card feature-card">
+          <img src="images/hay-analysis-icon.svg" height=230px width=230px alt="hay-analysis icon" class="hay-analysis-icon" aria-hidden="true">
+          <h2>Feed & Forage Analysis</h2>
+          <p>Start with current forage and feed data.</p>
+        </article>
+        <article class="card feature-card">
+          <img src="images/nutrition-gaps-icon.svg" height=230px width=230px alt="Nutrition gaps icon" class="Nutrition-gaps-icon" aria-hidden="true">
+          <h2>Nutrition Review & Gap Detection</h2>
+          <p>Compare current nutrients against recommended amounts to identify imbalances.</p>
+        </article>
+        <article class="card feature-card">
+          <img src="images/ai-chat-icon.svg" height=230px width=230px alt="AI chat icon" class="ai-chat-icon" aria-hidden="true">
+          <h2>AI Explanation</h2>
+          <p>Translate the nutrition review into plain language with helpful next steps and simple follow-up questions.</p>
+        </article>
+    </section>
+      </div>
+    <section class="page-section">
+      <div class="container highlight-card">
+        <h3>EquiBalance makes the process of building a forage-first feeding program into a supported evidence-based process</h2>
+      <div class="button-row">
+      <a class="btn btn-cta" href="prototype.html">View Prototype</a>
+      </div>
+      </div>
+    </section>
+       
+      
+
+   <footer class="site-footer">
+  <p>&copy; 2026 Dannie Trader. All rights reserved.</p>
+  <p class="project-note">
+    This prototype website was created as a capstone project for ITCC298: Computer Technology Intermediate Capstone at American Public University | May 24, 2026
+  </p>
+  <p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Use</a> |
+    <a href="#">Contact</a>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

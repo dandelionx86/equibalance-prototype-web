@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EquiBalance is a responsive forage-first equine nutrition prototype website with horse profile, forage entry, nutrition dashboard, AI explanation, and user guide sections." />
+  <title>EquiBalance | Forage-First Equine Nutrition</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="EquiBalance home">
+        <img src="images/equibalance-logo.png" alt="Equibalance logo" class="logo">
+        <span>EquiBalance</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prototype.html" class="active">Prototype</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="user-guide.html">User Guide</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="prototype" class="page-section">
+      <div class="container section-heading">
+        <p class="eyebrow">Prototype screens</p>
+        <h2>Explore the EquiBalance Prototype Workflow</h2>
+        <p>These prototype panels represent the core app experience: profile entry, feed entry, nutrient dashboard, AI explanation, warning screen, and help section.</p>
+      </div>
+
+      <div class="container prototype-grid">
+        <article class="prototype-card card">
+          <h3>1. Horse Profile Entry</h3>
+          <form class="mini-form" aria-label="Horse profile sample form">
+            <div class="horse-icon-box">
+              <img src="images/horse-icon.svg" alt="Horse icon" class="horse-icon">
+            </div>
+            <label>Horse Name<input type="text" value="Belle" /></label>
+            <label>Age<input type="number" value="10" /></label>
+            <label>Weight (kg)<input type="number" value="550" /></label>
+            <label>Workload<select><option>Moderate</option><option>Light</option><option>Heavy</option></select></label>
+          </form>
+          <div>
+            <fieldset>
+              <legend>Body Condition Score</legend>
+              <div class="score-row" aria-label="Body condition score options">
+                <button type="button">1</button><button type="button">2</button><button type="button">3</button><button type="button">4</button><button type="button" class="selected">5</button><button type="button">6</button><button type="button">7</button><button type="button">8</button><button type="button">9</button>
+              </div>
+            </fieldset></div>
+        </article>
+
+        <article class="prototype-card card">
+          <h3>2. Forage & Feed Entry</h3>
+          <div class="feed-list" id="feed-list" aria-live="polite"></div>
+          <button class="btn btn-small" type="button" id="add-feed">Add Feed Item</button>
+        </article>
+
+        <article class="prototype-card card balance">
+          <h3>3. Nutrient Summary Dashboard</h3>
+          <div class="chart" aria-label="Nutrient comparison chart">
+  <div style="--bar: 78%"><span>Energy</span><b></b><small>78%</small></div>
+  <div style="--bar: 86%"><span>Protein</span><b></b><small>86%</small></div>
+  <div style="--bar: 68%"><span>Calcium</span><b></b><small>68%</small></div>
+  <div style="--bar: 74%"><span>Magnesium</span><b></b><small>74%</small></div>
+  <div style="--bar: 63%"><span>Phosphorus</span><b></b><small>63%</small></div>
+</div>
+          <p class="balance-status">Overall Balance: Good</p>
+        </article>
+
+        <article class="prototype-card card ai-card">
+          <h3>4. AI-Assisted Explanation & Chatbot</h3>
+          <div class="ai-chat-icon-box">
+              <img src="images/ai-chat-icon.svg" alt="Horse icon" class="ai-chat-icon" aria-hidden="true">
+            </div>
+          <p class="speech">Your horse’s diet looks generally balanced, but phosphorus appears slightly lower than the target range. Review forage values before changing supplements.</p>
+          <div class="feedback" aria-label="Explanation feedback">
+            <span>Was this helpful?</span>
+            <button type="button" aria-label="Helpful">👍</button>
+            <button type="button" aria-label="Not helpful">👎</button>
+          </div>
+        </article>
+
+        <article class="prototype-card card warning-card">
+  <h3>5. Warning Screen</h3>
+
+  <div class="warning-box" role="alert">
+    <img src="images/warning-icon.svg" alt="" class="warning-icon" aria-hidden="true">
+
+    <div class="warning-content">
+      <strong>Some important information may be missing.</strong>
+      <p>Please complete the following to get accurate results:</p>
+      <ul>
+        <li>Horse weight</li>
+        <li>Forage intake data</li>
+      </ul>
+    </div>
+  </div>
+</article>
+
+        <article class="prototype-card card">
+          <h3>6. Help</h3>
+          <ol class="quick-start">
+            <li>Enter your horse’s profile information.</li>
+            <li>Add forage, feed, and supplement details.</li>
+            <li>Review nutrient summary and AI explanation.</li>
+          </ol>
+            <a class="btn btn-small" type="button" id="add-feed" href="user-guide">Go to User Guide</a>
+          </article>
+          
+    </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <p>&copy; 2026 Dannie Trader. All rights reserved.</p>
+  <p class="project-note">
+    This prototype website was created as a capstone project for ITCC298: Computer Technology Intermediate Capstone at American Public University | May, 2026.
+  </p>
+  <p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Use</a> |
+    <a href="#">Contact</a>
+  </p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

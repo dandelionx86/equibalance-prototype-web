@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EquiBalance is a responsive forage-first equine nutrition prototype website with horse profile, forage entry, nutrition dashboard, AI explanation, and user guide sections." />
+  <title>EquiBalance | Forage-First Equine Nutrition</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="EquiBalance home"> 
+        <img src="images/equibalance-logo.png" alt="Equibalance logo" class="logo">
+        <span>EquiBalance</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Toggle navigation menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="prototype.html">Prototype</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="user-guide.html" class="active">User Guide</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="page-section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">User Guide</p>
+          <h1>Purpose of This Guide</h1>
+          <p class="lead">This guide explains how to enter horse, forage, feed, and supplement nutrient information and how to review a nutrition summary with AI-supported explanations. </p>
+        </div>
+        <div class="hero-card image-card" aria-label="Decorative horse nutrition dashboard preview">
+          <img src="images/equibalance-logo.png" alt="Equibalance logo" class="logo-icon">
+          <div class="mini-dashboard">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-use" class="page-section how-to-use">
+        <div class="hero-copy">
+            <h2 class="center-heading">How to Use EquiBalance</h2>
+        </div>
+    </section>
+
+      <div class="container guide-grid">
+        <article class="step-card"><span>1</span>
+          <div class="guide-screenshot-box">
+              <img src="images/prototype-screenshots/horse-profile-entry-screen.svg" alt="Horse icon" class="screenshot">
+            </div>
+          <h3>Create Horse Profile</h3>
+          <p>Add name, age, weight, workload, and body condition score.</p>
+          <ul>
+            <li><strong>Select </strong>Create Horse Profile.</li>
+            <li>Enter the horse’s name.</li>
+            <li>Enter the horse’s estimated body weight.</li>
+            <li>Select the horse’s age category.</li>
+            <li>Select the horse’s workload.</li>
+            <li>Enter the horse’s body condition score (BCS). (Optional)</li>
+            <li><strong>Select </strong>Save Profile.</li>
+          </ul>
+        </article>
+        <article class="step-card"><span>2</span>
+          <div class="guide-screenshot-box">
+              <img src="images/prototype-screenshots/feed-forage-entry-screenshot.svg" alt="Feed and forage entry" class="screenshot">
+            </div>
+          <h3>Add Feed and Forage Information</h3>
+          <p>Enter hay, pasture, forage test data, and daily intake details.</p>
+          <ul>
+            <li><strong>Select </strong>Create Horse Profile.</li>
+            <li>Select Add Feed or Supplement.</li>
+            <li>Search for the product name.</li>
+            <li>Select the correct feed, ration balancer, or supplement from the results.</li>
+            <li>Enter the amount fed per day.</li>
+            <li>Confirm the serving unit.</li>
+            <li><strong>Select</strong> Save Feed</li>
+          </ul>
+        </article>
+        <article class="step-card"><span>3</span>
+             <div class="guide-screenshot-box">
+              <img src="images/prototype-screenshots/nutrient-summary-screenshot.svg" alt="Nutrition summary" class="screenshot">
+            </div>
+          <h3>Review Nutrition Summary</h3>
+          <p>Compare major nutrient categories against estimated needs.</p>
+          <ul>
+            <li>Open the horse profile.</li>
+            <li><strong>Select</strong> View Nutrient Summary.</li>
+            <li>Review the forage, feed, and supplement totals.</li>
+            <li>Check for highlighted nutrient gaps (shown in red)..</li>
+            <li>Check for highlighted nutrient excesses (yellow highlights).</li>
+            <li>Review calories, protein, vitamins, and minerals.</li>
+          </ul>
+        </article>
+        <article class="step-card"><span>4</span>
+          <div class="guide-screenshot-box">
+              <img src="images/prototype-screenshots/ai-chat-screenshot.svg" alt="AI-assisted explanation & chatbot screenshot" class="screenshot">
+            </div>
+          <h3>Read AI Explanation</h3>
+          <p>Use plain-language results to understand possible gaps or concerns.</p>
+          <ul>
+            <li>Read the plain-language summary of your horse’s nutrition profile.</li>
+            <li>Review the explanation of possible gaps or excesses.</li>
+            <li>Review the suggested next steps.</li>
+          </ul>
+          <p>
+            Note: AI-generated responses are not a substitute for professional veterinary or nutritional guidance. Always consult a 
+            qualified equine professional before making significant changes to your horse’s diet.
+          </p>
+        </article>
+        <article class="step-card"><span>5</span>
+
+          <h3>Check Warnings & Help</h3>
+          <div class="guide-screenshot-box">
+              <img src="images/prototype-screenshots/warning-screenshot.svg" alt="AI-assisted explanation & chatbot screenshot" class="screenshot">
+            </div>
+          <p><strong>Review Warning and Status Messages</strong></p>
+          <p>For a Complete List of Warning and Status Messages:</p>
+           <div class="button-row">
+            <a class="btn btn-cta" href="assets/documents/EquiBalance User Guide.pdf">Download the Complete User Guide</a>
+          </div>
+        </article>
+    </section>
+  </main>
+  <section>
+      <div class="container safety-notice" role="note" aria-label="Safety notice">
+        <span aria-hidden="true">🛡️</span>
+        <div>
+          <h3>Safety Notice</h3>
+          <p>EquiBalance is an educational decision-support tool only. The information provided does not constitute veterinary advice. Ration changes should be reviewed with a qualified equine nutritionist, veterinarian, or other licensed animal health professional before making changes to a horse’s diet.</p>
+        </div>
+      </div>
+    </section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Dannie Trader. All rights reserved.</p>
+  <p class="project-note">
+    This prototype website was created as a capstone project for ITCC298: Computer Technology Intermediate Capstone at American Public University | May, 2026.
+  </p>
+  <p>
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Use</a> |
+    <a href="#">Contact</a>
+  </p>
+</footer>
+    
+<script src="script.js"></script>   
+</body>
+</html>

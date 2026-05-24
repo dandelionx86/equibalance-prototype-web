@@ -443,7 +443,7 @@ select {
 
 
 /* =========================
-   Feature Cards / Home Page
+   Feature Cards
 ========================= */
 
 .feature-card {
@@ -569,7 +569,7 @@ select {
   color: var(--navy);
   font-size: 1.45rem;
   background: linear-gradient(90deg, #eef7ff, var(--white));
-  /* border-bottom: 1px solid rgba(44, 95, 45, 0.12); */
+  border-bottom: 1px solid rgba(44, 95, 45, 0.12);
   border-radius: 18px 18px 18px 18px;
 }
 
@@ -717,8 +717,6 @@ select {
   padding: 0.55rem 0.75rem;
   border-radius: 7px;
 }
-
-
 
 /* BCS fieldset stays with the form fields */
 .mini-form fieldset {
@@ -1058,7 +1056,7 @@ select {
    Guide Page
 ========================= */
 
-/* AI chat box */
+/* AI chat icon box */
 .ai-chat-icon-box {
   grid-row: 1 / span 5;
   width: 300px;
@@ -1171,7 +1169,7 @@ select {
     margin: 1.5rem auto;
   }
 
-  .horse-icon-box {
+  .horse-icon-box, .ai-chat-icon-box {
     grid-row: auto;
     width: 100%;
     max-width: 320px;
@@ -1275,7 +1273,7 @@ select {
     margin: 1.5rem auto;
   }
 
-  .horse-icon-box {
+  .horse-icon-box, .ai-chat-icon-box {
     grid-row: auto;
     width: 100%;
     max-width: 320px;
